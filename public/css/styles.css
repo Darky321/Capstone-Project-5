@@ -1,0 +1,129 @@
+/* General Styling */
+body {
+  font-family: "Cormorant Garamond", serif; /* A vintage-style serif font */
+  background-color: #e7e8d8; /* Background color from your palette */
+  color: #3c2a21; /* Dark brown for the text */
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #bc9f8b; /* Light brown from your palette */
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+
+/* Navigation Link Styling */
+a {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: #b5cfb7; /* Muted green from your palette */
+  color: #3c2a21; /* Dark brown text */
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid black; /* Black outline */
+}
+
+a:hover {
+  background-color: #bc9f8b; /* Hover effect with a lighter brown */
+}
+
+/* List Styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #f0e5cf; /* Creamy, vintage-like background for book items */
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black; /* Black outline */
+}
+
+/* Image Styling */
+img {
+  max-width: 150px;
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Left Side (Title, Author, Cover) */
+.left-side {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.left-side h2 {
+  font-size: 1.5em;
+  color: #3c2a21;
+}
+
+.left-side p {
+  margin: 5px 0;
+}
+
+/* Right Side (Rating, Review, Buttons) */
+.right-side {
+  flex: 1;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right-side p {
+  font-size: 1.2em;
+  color: #3c2a21;
+  margin: 10px 0;
+}
+
+/* Button Group: Encapsulates Delete and Edit Buttons */
+.button-group {
+  display: flex;
+  gap: 10px;
+  background-color: #b5cfb7; /* Green background */
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid black; /* Black outline */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form and Button Styling */
+form {
+  margin: 0;
+  padding: 0;
+}
+
+button,
+a.button {
+  /* Styling for both buttons */
+  background-color: #b5cfb7;
+  color: #3c2a21;
+  border: 2px solid black; /* Black outline */
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  margin: 0; /* Remove extra margin */
+  box-sizing: border-box; /* Ensure padding is included in width/height calculations */
+}
+
+button:hover,
+a.button:hover {
+  background-color: #bc9f8b;
+}

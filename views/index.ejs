@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Book Collection</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>My Book Collection</h1>
+    <a href="/add">Add a New Book</a>
+    <ul>
+      <% books.forEach(book => { %>
+      <li>
+        <div class="left-side">
+          <h2><%= book.title %></h2>
+          <p>by <%= book.author %></p>
+          <img src="<%= book.cover_url %>" alt="<%= book.title %> cover" />
+        </div>
+        <div class="right-side">
+          <p>Review: <%= book.review %></p>
+          <p>Rating: <%= book.rating %>/10</p>
+          <form action="/delete/<%= book.id %>" method="POST">
+            <button type="submit">Delete</button>
+          </form>
+          <a href="/edit/<%= book.id %>">Edit</a>
+        </div>
+      </li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
